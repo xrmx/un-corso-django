@@ -1,3 +1,3 @@
-# Summary
+# Un Corso Django
 
-- [Chapter 1](./chapter_1.md)
+[Introduzione](./ch00-00-introduzione.md)

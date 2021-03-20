@@ -1,6 +1,6 @@
 [book]
 authors = ["Riccardo Magliocchetti"]
-language = "en"
+language = "it"
 multilingual = false
 src = "src"
-title = "Corso Django"
+title = "Un Corso Django"
