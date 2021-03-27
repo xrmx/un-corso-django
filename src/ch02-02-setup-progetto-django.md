@@ -1,4 +1,4 @@
-# Setup progetto Django
+# Setup del progetto Django
 
 Ora che abbiamo installato Django nel nostro ambiente virtuale ci ritroveremo alcuni
 nuovi comandi disponibili, tra cui `django-admin`, tramite il quale creeremo un nuovo progetto:

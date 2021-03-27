@@ -44,6 +44,10 @@ Running migrations:
   Applying sessions.0001_initial... OK
 ```
 
+Una volta applicate le migrazioni nella nostra directory sarà presente un nuovo file *db.sqlite3*,
+come suggerisce il nome è un database [SQLite](https://sqlite3.org). SQLite viene usato come database
+di default di Django perché non richiede un server ed il database viene salvato in un singolo file.
+
 Ora che abbiamo preparato il database non ci resta che far partire il nostro progetto tramite il web
 server di sviluppo `runserver`:
 
