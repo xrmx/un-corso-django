@@ -49,3 +49,22 @@ server che supporta il protocollo `ASGI`. `ASGI` è un nuovo protocollo di inter
 applicazioni web Python asincrone sviluppato per Django e adottato anche da altri framework di
 nuova generazione. Il supporto di Django per una esecuzione completamente asincrona è ancora incompleto
 perciò non sarà trattato.
+
+### settings.py
+
+Il file `settings.py` contiene tutte le configurazioni del nostro progetto. Se lo apriamo possiamo notare
+come tutte le configurazioni siano espresse come variabili in maiuscolo, questa non è solo una
+convenzione ma è necessario per il funzionamento.
+
+Tra le configurazioni troviamo `SECRET_KEY` che è una stringa generata randomicamente al setup di
+ogni progetto. Questa variable viene usata per firmare crittograficamente perciò deve rimanere segreta e
+non deve essere riusata in progetti diversi. Noi svilupperemo solo un progetto di test perciò possiamo
+non preoccuparcene.
+
+Un'altra configurazione importante è `DEBUG`, quando abilitata fa restituire a Django più informazioni
+in caso di errore. Queste informazioni però non devono essere esposte in produzione.
+
+## Esercizi
+
+- Nell'intestazione del file `settings.py` trovi i riferimenti alla documentazione ufficiale e alla
+reference delle configurazioni. Leggi la documentazione di ognuna delle opzioni che trovi nel file.
