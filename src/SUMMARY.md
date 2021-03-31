@@ -16,3 +16,8 @@
     - [Anatomia di una applicazione Django](./ch03-01-anatomia-applicazione-django.md)
     - [Creiamo una vista](./ch03-02-creiamo-una-vista.md)
     - [Un template per la vista](./ch03-03-un-template-per-la-vista.md)
+- [Il nostro progetto: una libreria di corsi](./ch04-00-il-nostro-progetto.md)
+    - [Setup del progetto](./ch04-01-setup-progetto.md)
+    - [Setup repository GitHub](./ch04-02-setup-repository-github.md)
+    - [Setup del database](./ch04-03-setup-database.md)
+    - [Configuriamo il progetto](./ch04-04-configuriamo-progetto.md)
