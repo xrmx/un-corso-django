@@ -25,7 +25,10 @@ pip install Django
 ```
 
 > source è una funzionalità della shell per importare un file, viene usato per settare delle variabili
-> d'ambiente
+> d'ambiente.
+> In Windows con PowerShell per attivare l'ambiente bisogna eseguire il file venv\Scripts\Activate.ps1
+> Per dettagli consultare la documentazione del
+> [modulo venv](https://docs.python.org/3/library/venv.html).
 
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
 scrittura 3.1.7.
