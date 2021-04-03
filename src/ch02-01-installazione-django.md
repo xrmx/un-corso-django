@@ -21,7 +21,7 @@ Una volta creato il nostro ambiente, lo attiviamo e procediamo con l'installazio
 
 ```shell
 source ./venv/bin/activate
-pip install Django
+pip install Django wheel
 ```
 
 > source è una funzionalità della shell per importare un file, viene usato per settare delle variabili
@@ -31,7 +31,8 @@ pip install Django
 > [modulo venv](https://docs.python.org/3/library/venv.html).
 
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
-scrittura 3.1.7.
+scrittura 3.1.7. Abbiamo anche installato wheel per aggiungere il supporto all'uso dei pacchetti
+binari pre-compilati.
 
 > Django rilascia una nuova versione ogni 8 mesi, ogni versione viene mantenuta per circa un anno.
 > Alcune versioni sono designate come `long-term support (LTS)` e mantenute per circa 3 anni.
