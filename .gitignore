@@ -1,1 +1,4 @@
 book
+*.swp
+
+docker/.*-data
