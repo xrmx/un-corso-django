@@ -4,9 +4,8 @@ Useremo GitHub come piattaforma per ospitare il nostro codice, andremo quindi a 
 repository git.
 Apriamo il nostro browser all'indirizzo [https://github.com/new](https://github.com/new) per vedere il
 form di creazione di un nuovo repository.
-Inseriamo **catalogo** come *Repository Name*, possiamo lasciare vuoto il campo *Description*, lasciamo
-il repository pubblico con *Public* selezionato in modo che sia visibile anche dagli utenti nel caso
-aveste bisogno di aiuto.
+Inseriamo **catalogo** come *Repository Name*, possiamo lasciare vuoto il campo *Description*,
+configuriamo il repository privato selezionando *Private*.
 Vogliamo creare un repository vuoto quindi non andremo a selezionare nessuna delle opzioni proposte.
 Infine creiamo il repository con `Create repository`, saremmo rediretti nella pagina del repository
 appena creato.
