@@ -34,12 +34,6 @@ DATABASES = {
 }
 ```
 
-Per verificare che la configurazione sia corretta possiamo applicare le migrazioni del progetto:
-
-```shell
-python3 manage.py migrate
-```
-
 ## PostgreSQL
 
 ```python
@@ -55,10 +49,25 @@ DATABASES = {
 }
 ```
 
+## Migriamo
+
 Per verificare che la configurazione sia corretta possiamo applicare le migrazioni del progetto:
 
 ```shell
 python3 manage.py migrate
+```
+
+Una volta che abbiamo applicato le migrazioni possiamo aggiornare i dati nel repository:
+
+```shell
+git add catalogo/settings.py
+git commit -m "Aggiorniamo la configurazione del database"
+```
+
+E aggiorniamo il repository remoto:
+
+```shell
+git push origin main
 ```
 
 ## Esercizi
