@@ -61,6 +61,16 @@ docker-compose -f mariadb.yml up
 
 > Il server salverà i dati in una directory relativa al percorso del file yaml
 
+Oltre al database viene fatta girare anche una interfaccia di configurazione. Tramite
+[questa interfaccia](http://127.0.0.1:8080/?server=db&username=root&sql=) dopo aver fatto il login
+usando `root` come utente e `password` come password inseriamo il seguento comando SQL:
+
+```
+GRANT ALL PRIVILEGES ON test_mariadb.* TO 'mariadb';
+```
+
+Questo ci servirà per poter eseguire i test.
+
 ## Esercizi
 
 Leggi la [documentazione](https://docs.djangoproject.com/en/3.1/ref/databases/) specifica del database
