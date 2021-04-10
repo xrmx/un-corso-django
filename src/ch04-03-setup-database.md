@@ -36,7 +36,7 @@ docker-compose -f postgres.yml up
 
 ## Client MariaDB / MySQL
 
-Il support per MariaDB e MySQL richiede l'installazione del driver
+Il supporto per MariaDB e MySQL richiede l'installazione del driver
 [mysqlclient](https://mysqlclient.readthedocs.io/) che viene fornito precompilato solo per Windows.
 
 Per sistemi Linux come Debian o Ubuntu usare il seguente comando per installare le dipendenze:
@@ -60,6 +60,16 @@ docker-compose -f mariadb.yml up
 ```
 
 > Il server salverà i dati in una directory relativa al percorso del file yaml
+
+Oltre al database viene fatta girare anche una interfaccia di configurazione. Tramite
+[questa interfaccia](http://127.0.0.1:8080/?server=db&username=root&sql=) dopo aver fatto il login
+usando `root` come utente e `password` come password inseriamo il seguento comando SQL:
+
+```
+GRANT ALL PRIVILEGES ON test_mariadb.* TO 'mariadb';
+```
+
+Questo ci servirà per poter eseguire i test.
 
 ## Esercizi
 

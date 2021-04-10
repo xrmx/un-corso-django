@@ -25,3 +25,5 @@
     - [Le relazioni uno a molti](./ch04-06-relazioni-uno-molti.md)
     - [Le relazioni molti a molti](./ch04-07-relazioni-molti-molti.md)
     - [Fare le query](./ch04-08-fare-le-query.md)
+    - [Testiamo i modelli](./ch04-09-testiamo-i-modelli.md)
+    - [Gestiamo i contenuti in Admin](./ch04-10-gestiamo-contenuti-admin.md)

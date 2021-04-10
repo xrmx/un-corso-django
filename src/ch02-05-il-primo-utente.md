@@ -7,7 +7,7 @@ gli utenti. Possiamo rendercene conto guardando la lista delle migrazioni e scor
 Django include una gestione degli utenti basilare, non include infatti già il supporto alla registrazione. Per cominciare quindi dobbiamo creare un superutente manualmente tramite il comando `createsuperuser`:
 
 ```shell
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 Inseriamo i dati richiesti, l'email non è obbligatoria:
