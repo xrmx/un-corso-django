@@ -36,7 +36,7 @@ docker-compose -f postgres.yml up
 
 ## Client MariaDB / MySQL
 
-Il support per MariaDB e MySQL richiede l'installazione del driver
+Il supporto per MariaDB e MySQL richiede l'installazione del driver
 [mysqlclient](https://mysqlclient.readthedocs.io/) che viene fornito precompilato solo per Windows.
 
 Per sistemi Linux come Debian o Ubuntu usare il seguente comando per installare le dipendenze:
