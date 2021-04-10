@@ -1,5 +1,6 @@
 # Un Corso Django
 
+[Un corso Django](./titolo.md)
 [Introduzione](./ch00-00-introduzione.md)
 
 ## Cominciamo
