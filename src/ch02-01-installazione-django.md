@@ -31,11 +31,11 @@ pip install Django wheel
 > [modulo venv](https://docs.python.org/3/library/venv.html).
 
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
-scrittura 3.1.7. Abbiamo anche installato wheel per aggiungere il supporto all'uso dei pacchetti
+scrittura 3.2. Abbiamo anche installato wheel per aggiungere il supporto all'uso dei pacchetti
 binari pre-compilati.
 
 > Django rilascia una nuova versione ogni 8 mesi, ogni versione viene mantenuta per circa un anno.
 > Alcune versioni sono designate come `long-term support (LTS)` e mantenute per circa 3 anni.
-> Quale versione usare dipende dal tipo di progetto.
+> Quale versione usare dipende dal tipo di progetto. Django 3.2 è una versione LTS.
 
 Molto bene, abbiamo installato Django!

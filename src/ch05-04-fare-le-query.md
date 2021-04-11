@@ -173,6 +173,6 @@ configurato Django per proteggere la cancellazione di una `Categoria` quando vie
 
 ## Esercizi
 
-Apri una [shell Django](https://docs.djangoproject.com/en/3.1/ref/django-admin/#shell) e prova a creare, modificare ed eliminare dei modelli.
+Apri una [shell Django](https://docs.djangoproject.com/en/3.2/ref/django-admin/#shell) e prova a creare, modificare ed eliminare dei modelli.
 
-Leggi l'introduzione della [documentazione dei QuerySet](https://docs.djangoproject.com/en/3.1/ref/models/querysets/).
+Leggi l'introduzione della [documentazione dei QuerySet](https://docs.djangoproject.com/en/3.2/ref/models/querysets/).

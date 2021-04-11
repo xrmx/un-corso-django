@@ -115,7 +115,7 @@ git push origin main
 
 ## Esercizi
 
-Leggi la documentazione dei campi dei modelli che abbiamo usato nella [reference](https://docs.djangoproject.com/en/3.1/ref/models/fields/).
+Leggi la documentazione dei campi dei modelli che abbiamo usato nella [reference](https://docs.djangoproject.com/en/3.2/ref/models/fields/).
 
-Leggi la [documentazione](https://docs.djangoproject.com/en/3.1/topics/migrations/) dei comandi delle
+Leggi la [documentazione](https://docs.djangoproject.com/en/3.2/topics/migrations/) dei comandi delle
 migrazioni che abbiamo usato.

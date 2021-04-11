@@ -68,5 +68,5 @@ git push origin main
 ## Esercizi
 
 Leggi la documentazione di
-[ForeignKey](https://docs.djangoproject.com/en/3.1/ref/models/fields/#foreignkey) facendo attenzione
-alle varie opzioni di [on_delete](https://docs.djangoproject.com/en/3.1/ref/models/fields/#django.db.models.ForeignKey.on_delete)
+[ForeignKey](https://docs.djangoproject.com/en/3.2/ref/models/fields/#foreignkey) facendo attenzione
+alle varie opzioni di [on_delete](https://docs.djangoproject.com/en/3.2/ref/models/fields/#django.db.models.ForeignKey.on_delete)

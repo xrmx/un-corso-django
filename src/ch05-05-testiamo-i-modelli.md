@@ -63,7 +63,7 @@ git push origin main
 
 ## Esercizi
 
-Leggi [l'overview sui test](https://docs.djangoproject.com/en/3.1/topics/testing/overview/) di Django.
+Leggi [l'overview sui test](https://docs.djangoproject.com/en/3.2/topics/testing/overview/) di Django.
 
 Consulta la [lista degli assert](https://docs.python.org/3/library/unittest.html#assert-methods) del
 modulo `unittest` di Python.

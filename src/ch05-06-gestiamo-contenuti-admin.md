@@ -59,5 +59,5 @@ git push origin main
 Inserisci, modifica, cancella, ricerca e filtra i modelli in *Admin*.
 
 Leggi la documentazione delle
-[opzioni di ModelAdmin](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#modeladmin-options)
+[opzioni di ModelAdmin](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options)
 che abbiamo usato.
