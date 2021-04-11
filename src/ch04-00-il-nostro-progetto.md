@@ -1,6 +1,6 @@
 # Il nostro progetto: una libreria di corsi
 
-Nel capitolo precedente abbiamo visto che come creare un nuovo progetto Django, una applicazione Django
+Nel capitolo precedente abbiamo visto come creare un nuovo progetto Django, una applicazione Django
 ed infine una vista che serva del contenuto.
 
 In questo capitolo introdurremo invece il progetto che porteremo fino alla fine del corso: una libreria
