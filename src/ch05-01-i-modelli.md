@@ -1,4 +1,4 @@
-# Una applicazione per i corsi
+# I modelli
 
 Come abbiamo visto il nostro progetto `catalogo` dovrà contenere una libreria di corsi. Procediamo
 quindi a creare una nuova applicazione `corsi`:
