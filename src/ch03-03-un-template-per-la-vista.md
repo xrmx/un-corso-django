@@ -93,6 +93,6 @@ Se ricarichiamo la pagina tutto dovrebbe essersi sistemato.
 
 ## Esercizi
 
-- Leggi la documentazione ufficiale dei [templates](https://docs.djangoproject.com/en/3.1/topics/templates/)
-- Leggi la documentazione di [TemplateView](https://docs.djangoproject.com/en/3.1/ref/class-based-views/base/#templateview) per scoprire chi implementa `get_context_data`
+- Leggi la documentazione ufficiale dei [templates](https://docs.djangoproject.com/en/3.2/topics/templates/)
+- Leggi la documentazione di [TemplateView](https://docs.djangoproject.com/en/3.2/ref/class-based-views/base/#templateview) per scoprire chi implementa `get_context_data`
 - Metti nei segnalibri il sito [Classy Class-Based Views](https://ccbv.co.uk/), ci sarà utile in futuro

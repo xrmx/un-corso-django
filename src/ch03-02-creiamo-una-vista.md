@@ -74,5 +74,5 @@ Se puntiamo il browser su `http://127.0.0.1:8000/` dovremmo vedere la nostra hom
 ## Esercizi
 
 - Come possiamo restituire uno status code diverso da 200? Guarda nella documentazione ufficiale di
-  [HttpResponse](https://docs.djangoproject.com/en/3.1/ref/request-response/#httpresponse-objects)
+  [HttpResponse](https://docs.djangoproject.com/en/3.2/ref/request-response/#httpresponse-objects)
   come possiamo farlo

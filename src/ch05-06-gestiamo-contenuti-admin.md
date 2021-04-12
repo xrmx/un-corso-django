@@ -46,10 +46,18 @@ python3 manage.py runserver
 Ed infine collegarci all'indirizzo [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) per poter
 interagire con i modelli della nostra applicazione `corsi`.
 
+Una volta verificato che tutto funziona aggiorniamo il codice su git:
+
+```shell
+git add corsi/admin.py
+git commit -m "Admin per modelli corsi"
+git push origin main
+```
+
 ## Esercizi
 
 Inserisci, modifica, cancella, ricerca e filtra i modelli in *Admin*.
 
 Leggi la documentazione delle
-[opzioni di ModelAdmin](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#modeladmin-options)
+[opzioni di ModelAdmin](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options)
 che abbiamo usato.

@@ -73,5 +73,5 @@ Questo ci servirà per poter eseguire i test.
 
 ## Esercizi
 
-Leggi la [documentazione](https://docs.djangoproject.com/en/3.1/ref/databases/) specifica del database
+Leggi la [documentazione](https://docs.djangoproject.com/en/3.2/ref/databases/) specifica del database
 che andrai ad utilizzare.

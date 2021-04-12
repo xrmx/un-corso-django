@@ -42,4 +42,4 @@ git push origin main
 
 ## Esercizi
 
-Leggi la [documentazione](https://docs.djangoproject.com/en/3.1/ref/models/fields/#django.db.models.ManyToManyField) di `ManyToManyField`
+Leggi la [documentazione](https://docs.djangoproject.com/en/3.2/ref/models/fields/#django.db.models.ManyToManyField) di `ManyToManyField`
