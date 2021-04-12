@@ -30,3 +30,4 @@
     - [Testiamo i modelli](./ch05-05-testiamo-i-modelli.md)
     - [Gestiamo i contenuti in Admin](./ch05-06-gestiamo-contenuti-admin.md)
 - [Le viste per l'applicazione dei corsi](./ch06-00-le-viste-per-applicazione-corsi.md)
+    - [La lista dei corsi](./ch06-01-la-lista-dei-corsi.md)
