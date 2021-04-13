@@ -51,7 +51,9 @@ presenti nella directory `tests` della nostra applicazione presenti in file il c
 `test`.
 
 I test vengono raggruppati in classi che ereditano da `TestCase`, i singoli test sono implementati 
-come metodi di questa classe ed il loro nome deve cominciare con `test_`.
+come metodi di questa classe ed il loro nome deve cominciare con `test_`. Ogni test viene eseguito
+in una transazione del database che poi viene annullata, quindi le query fatte durante ogni test non
+inficiano gli altri.
 
 Quindi salviamo i nostri progressi:
 
