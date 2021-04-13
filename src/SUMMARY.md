@@ -32,3 +32,4 @@
 - [Le viste per l'applicazione dei corsi](./ch06-00-le-viste-per-applicazione-corsi.md)
     - [La lista dei corsi](./ch06-01-la-lista-dei-corsi.md)
     - [Il dettaglio del singolo corso](./ch06-02-dettaglio-singolo-corso.md)
+    - [Filtriamo i corsi](./ch06-03-filtriamo-corsi.md)
