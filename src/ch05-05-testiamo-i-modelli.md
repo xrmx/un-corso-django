@@ -55,6 +55,12 @@ come metodi di questa classe ed il loro nome deve cominciare con `test_`. Ogni t
 in una transazione del database che poi viene annullata, quindi le query fatte durante ogni test non
 inficiano gli altri.
 
+Facciamo girare i test con il comando:
+
+```shell
+python3 manage.py test
+```
+
 Quindi salviamo i nostri progressi:
 
 ```shell
