@@ -93,6 +93,12 @@ che rispettivamente controllano che una stringa sia presente o meno nella rispos
 Per effettuare queste chiamate usiamo il client presente per default come attributo `client` all'interno
 della classe. Il client viene inizializzato da zero per ogni singolo test.
 
+Facciamo girare i test con il comando:
+
+```shell
+python3 manage.py test
+```
+
 Per concludere aggiorniamo i nostri progressi in git:
 
 ```shell
