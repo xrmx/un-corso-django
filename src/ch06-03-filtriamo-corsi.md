@@ -96,8 +96,11 @@ della classe. Il client viene inizializzato da zero per ogni singolo test.
 Facciamo girare i test con il comando:
 
 ```shell
-python3 manage.py test
+python3 manage.py test --keepdb
 ```
+
+Lo switch `--keepdb` non fa cancellare e creare a Django un nuovo database nel quale far girare i test
+se ne esiste già uno.
 
 Per concludere aggiorniamo i nostri progressi in git:
 
