@@ -246,7 +246,7 @@ queryset sia uguale ad una lista di valori.
 Facciamo girare i test con il comando:
 
 ```python
-python3 manage.py test corsi
+python3 manage.py test corsi --keepdb
 ```
 
 Tutti i nostri test passano, possiamo aggiornare il codice su git:
