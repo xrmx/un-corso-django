@@ -34,3 +34,4 @@
     - [Il dettaglio del singolo corso](./ch06-02-dettaglio-singolo-corso.md)
     - [Filtriamo i corsi](./ch06-03-filtriamo-corsi.md)
     - [Inseriamo e modifichiamo i corsi](./ch06-04-inseriamo-corsi.md)
+    - [Autentichiamo le viste](./ch06-05-autentichiamo-viste.md)
