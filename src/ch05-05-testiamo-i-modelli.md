@@ -71,9 +71,9 @@ git push origin main
 
 ## Esercizi
 
+Scrivi dei test analoghi per il modello `Corso`, salvali su git e pubblicali su GitHub.
+
 Leggi [l'overview sui test](https://docs.djangoproject.com/en/3.2/topics/testing/overview/) di Django.
 
 Consulta la [lista degli assert](https://docs.python.org/3/library/unittest.html#assert-methods) del
 modulo `unittest` di Python.
-
-Scrivi dei test analoghi per il modello `Corso`, salvali su git e pubblicali su `GitHub`.
