@@ -45,7 +45,7 @@ class CategoriaTestCase(TestCase):
         self.assertGreater(categoria.aggiornato, data_aggiornamento)
 ```
 
-Il sistema di testing di Django estende quello della libreria standard di Python chiamao
+Il sistema di testing di Django estende quello della libreria standard di Python chiamato
 [unittest](https://docs.python.org/3/library/unittest.html). Il runner dei test di Django esegue i test
 presenti nella directory `tests` della nostra applicazione presenti in file il cui nome inizia per
 `test`.
