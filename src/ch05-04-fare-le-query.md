@@ -157,6 +157,70 @@ esempi sono stati valutati perché nella shell viene stampato la rappresentazion
 istruzioni date. Ad esempio se assegniamo un `QuerySet` ad una variabile, il `QuerySet` non sarebbe
 valutato e quindi la query SQL sottostante non sarebbe eseguita.
 
+Possiamo filtrare le nostre istanze anche in modo negativo cioè specificando dei criteri per
+l'esclusione usando il metodo `.exclude()`:
+
+```python
+Corso.objects.exclude(categoria=categoria)
+```
+
+Con la query precedente abbiamo escluso tutti i corsi facenti parte di una categoria specifica.
+I metodi `filter` ed `exclude` possono essere usati contemporaneamente per costruire lo stesso QuerySet.
+
+I QuerySet sono ordinabili usando il metodo `order_by()`:
+
+```python
+Corso.objects.order_by("titolo")
+```
+
+Se non ordiniamo esplicitamente i QuerySet non sono ordinati, anche se può sembrare lo siano. Possiamo
+ordinare i QuerySet per un numero arbitriario di campi.
+
+I metodi che abbiamo visto finora restituiscono sempre un QuerySet contente istanze di modelli,
+questo comporta:
+- fare una query SQL per recuperare tutte le colonne delle righe coinvolte
+- per ognuna di queste righe creare una nuova istanza del nostro modello
+
+In alcuni casi questo potrebbe comportare far fare alla nostra applicazione più lavoro di quello
+necessario. Esistono altri due metodi che ci permettono di restituire un sottoinsieme dei campi senza
+costruire le istanze dei modelli.
+
+Il metodo `values()` restituisce un QuerySet di dizionari con chiave il nome del campo e come valore
+il valore del campo:
+
+```python
+Corso.objects.values("titolo", "categoria")
+```
+
+Ogni elemento del QuerySet sarà un dizionario del tipo `{"titolo": "titolo", "categoria": 1}` dove
+`1` è il valore della chiave primaria dell'istanza di `Categoria` collegata al `Corso`. Se non
+specifichiamo alcun campo saranno restituiti tutti quelli del modello.
+
+Il metodo `values_list()` invece restituisce un QuerySet di tuple:
+
+```python
+Corso.objects.values_list("titolo", "categoria")
+```
+
+Ogni elemento del QuerySet sarà una tupla del tipo `("titolo", 1)`. `values_list()` dispone di un
+parametro che permette di rendere *flat* l'output restituito:
+
+```python
+Corso.objects.values_list("categoria", flat=True)
+```
+
+Ogni elemento del QuerySet sarà un numero che identifica il valore di una chiave primaria di `Categoria`.
+Questo metodo si sposa bene con `distinct()` che elimina i duplicati dal nostro QuerySet.
+
+Infine altri due metodi utili sono `count()` per far contare al database quante istanze ci sono in un
+QuerySet, mentre `exists()` restituisce un valore boolean che indica la presenza o meno di istanze
+nel QuerySet:
+
+```python
+Corso.objects.filter(categoria=categoria).count()
+Corso.objects.filter(categoria=categoria).exists()
+```
+
 ## Eliminare istanze modelli
 
 Per eliminare delle istanze di modelli possiamo usare il metodo `delete()` sia sulla istanza che sui
@@ -169,7 +233,6 @@ Categoria.objects.get().delete()
 
 Abbiamo cancellato prima tutte le istanze di `Corso` e successivamente la `Categoria` perché abbiamo
 configurato Django per proteggere la cancellazione di una `Categoria` quando viene usata da un `Corso`.
-
 
 ## Esercizi
 
