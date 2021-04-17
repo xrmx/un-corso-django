@@ -259,6 +259,9 @@ git push origin main
 
 ## Esercizi
 
+Replichiamo le nuove viste, le url, i template ed i test che abbiamo creato per i corsi anche per le
+categorie. Salva i progressi su git e pubblicali su GitHub.
+
 Consulta la documentazione dei [ModelForm](https://docs.djangoproject.com/en/3.2/topics/forms/modelforms/#modelform).
 
 I form sono un argomento immenso, consulta la

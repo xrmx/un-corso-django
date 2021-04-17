@@ -301,6 +301,9 @@ git push origin main
 
 ## Esercizi
 
+Rendiamo le viste di creazione ed aggiornamento delle categoria disponibili solo per gli utenti
+autenticati ed aggiorniamo i test. Salva i progressi su git e pubblicali su GitHub.
+
 Consulta la documentazione di [LoginRequiredMixin](https://docs.djangoproject.com/en/3.2/topics/auth/default/#the-loginrequired-mixin).
 
 Consulta la documentazione di [LoginView](https://docs.djangoproject.com/en/3.2/topics/auth/default/#django.contrib.auth.views.LoginView).

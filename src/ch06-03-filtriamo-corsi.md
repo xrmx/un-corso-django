@@ -50,7 +50,8 @@ quindi prendiamo il valore della chiave *q* e se esiste lo usiamo per filtrare u
 `QuerySet`.
 Per filtrare il `QuerySet` introduciamo due nuove funzionalità, l'oggetto *Q* e i *lookups* dei campi.
 Gli oggetti *Q* ci permettono di implementare le query con filtri in *OR* logico (vedi *|*), se avessimo
-messo due `filter()` di seguito sarebbero stati in *AND* logico.
+messo due condizioni all'interno del `filter()` o due `filter()` di seguito le condizioni sarebbero
+state in *AND* logico.
 I *lookups* invece ci permettono di filtrare nei campi in modo più specifico rispetto alla semplice
 uguaglianza, in questo caso abbiamo usato `icontains` per cercare all'interno del campo in modo
 *case-insensitive* la presenza di una stringa.
@@ -111,6 +112,9 @@ git push origin main
 ```
 
 ## Esercizi
+
+Replichiamo le due viste, le url, i template ed i test che abbiamo creato per i corsi anche per le
+categorie. Salva i progressi su git e pubblicali su GitHub.
 
 Guarda come è fatto l'oggetto `HttpRequest` di Django nella
 [documentazione](https://docs.djangoproject.com/en/3.2/ref/request-response/#httprequest-objects)
