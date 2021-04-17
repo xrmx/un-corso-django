@@ -74,11 +74,14 @@ Creare una istanza della classe non è sufficiente per persisterla nel database,
 metodo `save()`. `save()` si occupa sia dell'inserimento che dell'aggiornamento in database
 automaticamente, chiamandolo più di una volta sulla stessa istanza non ne creerà di nuove.
 
-Esiste un helper che raggruppa le due operazioni che useremo negli esempi successivi:
+Esiste un helper `create()` che raggruppa le due operazioni che useremo negli esempi successivi:
 
 ```python
 Categoria.objects.create(titolo="Sviluppo software")
 ```
+
+L'attributo `objects` è una istanza di un *Manager*, viene creata per default in ogni modello ed è
+l'interfaccia che ci permette di fare le query al database attraverso il nostro modello.
 
 ## Relazioni uno a molti
 
@@ -92,6 +95,11 @@ corso = Corso.objects.create(
 
 Come potete vedere i campi di relazione si assegnano usando una istanza **salvata in database** del
 modello a cui fanno riferimento.
+
+Ogni `ForeignKey` crea nel modello a cui punta un *Manager di relazione*, analogo ad `objects`.
+Questo *Manager* si presenta sottoforma di attributo con nome `<nome modello con fk>_set`, nel nostro
+caso `Categoria` avrà un attributo `corso_set`. Tramite questo *Manager* sarà possibile eseguire
+tutte le query che vedremo successivamente.
 
 ## Relazioni molti a molti
 
@@ -134,6 +142,15 @@ Per recuperare tutte le istanze si usa `.all()`:
 ```python
 Categoria.objects.all()
 ```
+
+Per prende tutti i corsi di una *istanza* di categoria possiamo usare il *Manager di relazione*
+`corso_set`:
+
+```python
+categoria.corso_set.all()
+```
+
+Il risultato sarà un QuerySet di istanze del modello `Corso`.
 
 Per recuperare invece più di una istanza filtrandola per qualche parametro si usa `.filter()`:
 
@@ -239,3 +256,7 @@ configurato Django per proteggere la cancellazione di una `Categoria` quando vie
 Apri una [shell Django](https://docs.djangoproject.com/en/3.2/ref/django-admin/#shell) e prova a creare, modificare ed eliminare dei modelli.
 
 Leggi l'introduzione della [documentazione dei QuerySet](https://docs.djangoproject.com/en/3.2/ref/models/querysets/).
+
+Consulta la documentazione dei [Manager](https://docs.djangoproject.com/en/3.2/topics/db/managers/).
+
+Consulta la documentazione dei [Manager di relazione](https://docs.djangoproject.com/en/3.2/ref/models/relations/).
