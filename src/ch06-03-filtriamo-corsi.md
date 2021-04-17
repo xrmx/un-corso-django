@@ -112,6 +112,9 @@ git push origin main
 
 ## Esercizi
 
+Replichiamo le due viste, le url, i template ed i test che abbiamo creato per i corsi anche per le
+categorie. Salva i progressi su git e pubblicali su GitHub.
+
 Guarda come è fatto l'oggetto `HttpRequest` di Django nella
 [documentazione](https://docs.djangoproject.com/en/3.2/ref/request-response/#httprequest-objects)
 
