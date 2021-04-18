@@ -109,8 +109,8 @@ E creiamo il template `templates/registration/login.html`:
 
 {% if next %}
     {% if user.is_authenticated %}
-    <p>Il tuo account non ha accesso a questa pagina, Per continuare esegui il login con un account
-    che hai permessi necessari.</p>
+    <p>Il tuo account non ha accesso a questa pagina. Per continuare esegui il login con un account
+    che ha i permessi necessari.</p>
     {% else %}
     <p>Per favore esegui il login per vedere questa pagina.</p>
     {% endif %}
