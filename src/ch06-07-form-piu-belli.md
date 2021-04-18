@@ -35,6 +35,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 ```
 
 Scarichiamo [Bootstrap 4.6.0](https://github.com/twbs/bootstrap/releases/download/v4.6.0/bootstrap-4.6.0-dist.zip) ed estriamo il contenuto del pacchetto zip.
+Bootstrap 4 ha come dipendenza [jQuery](https://jquery.com/) quindi scarichiamo l'ultima versione
+*slim* disponibile, al momento [jQuery 3.6.0](https://code.jquery.com/jquery-3.6.0.slim.min.js).
 
 Nel nostro progetto invece andiamo a creare la directory che conterrà i file statici condivisi dalla
 nostra applicazione:
@@ -44,8 +46,8 @@ mkdir static
 mkdir static/css static/js
 ```
 
-Copiamo quindi i file `css/bootstrap.min.css` e `js/bootstrap.bundle.min.js` rispettivamente in
-`static/css` e in `static/js`.
+Copiamo quindi i file `css/bootstrap.min.css` e `js/bootstrap.bundle.min.js` dalla directory di Boostrap
+rispettivamente in `static/css` e in `static/js`. Copiamo `jquery-3.6.0.slim.min.js` in `static/js`.
 
 La nostra directory `static` apparirà così:
 
@@ -53,6 +55,7 @@ La nostra directory `static` apparirà così:
 static/
 static/js
 static/js/bootstrap.bundle.min.js
+static/js/jquery-3.6.0.slim.min.js
 static/css
 static/css/bootstrap.min.css
 ```
@@ -77,6 +80,7 @@ Bootstrap:
   <head>
     <title>{% block title %}Corsi{% endblock %}</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.6.0.slim.min.js"></script>
     <script src="/static/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
