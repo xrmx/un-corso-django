@@ -31,8 +31,8 @@ Se lo chiamiamo vediamo tutti i comandi, raggruppati per `applicazione` già dis
 
 ## I file del progetto
 
-I file di progetto sono quelli contenuti nella directory che siama come il nostro progetto, in questo
-caso `nuovoprogetto`.
+I file di progetto sono quelli contenuti nella directory che si chiama come il nostro progetto, in
+questo caso `nuovoprogetto`.
 
 Il file `urls.py` contiene le rotte per il routing delle richieste alla nostra applicazione.
 
@@ -41,7 +41,7 @@ Il file `__init__.py` ha la funzione standard di Python di far diventare questa 
 Il file `settings.py` contiene tutte le configurazioni del nostro progetto.
 
 Il file `wsgi.py` contiene l'entrypoint per poter caricare la nostra applicazione in un application
-server che supporta lo standard `WSGI`. `WSGI` è lo standard Python per usato da tutte le applicazioni
+server che supporta lo standard `WSGI`. `WSGI` è lo standard Python più usato dalle applicazioni
 web Python.
 
 Il file `asgi.py` contiene l'entrypoint per poter caricare la nostra applicazione in un application

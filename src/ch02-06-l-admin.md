@@ -28,7 +28,7 @@ una nuova istanza di ogni tipo di modello.
 
 Nella parte centrale abbiamo la ricerca testuale sulle varie istanze dei modelli, quindi la lista
 di tutti i modelli.
-Tra la ricerca e la lista delle istanze abbiamo la sezione della azioni che possiamo svolgere sulle
+Tra la ricerca e la lista delle istanze abbiamo la sezione delle azioni che possiamo svolgere sulle
 istanze selezionate.
 
 Nella parte destra dello schermo invece abbiamo un bottone per aggiungere un nuovo Utente e la parte
@@ -39,4 +39,4 @@ non entriamo nei dettagli degli attributi degli utenti, facciamo solo caso ai bo
 della pagina che ci permettono di cancellare o modificare il nostro utente.
 
 Tutte queste funzionalità sono rese disponibili nell'interfaccia di amministrazione ai nostri modelli
-tramite senza doverle programmare ma in modo dichiarativo.
+in modo dichiarativo senza doverle programmare.
