@@ -238,6 +238,18 @@ Corso.objects.filter(categoria=categoria).count()
 Corso.objects.filter(categoria=categoria).exists()
 ```
 
+## Aggiornare istanze modelli
+
+Per aggiornare di un QuerySet si usa il metodo `update()`:
+
+```python
+Corso.objects.filter(titolo="titolo").update(categoria=categoria)
+```
+
+Usare `update()` su un QuerySet non implica chiamare il metodo `save()` di ogni oggetto presente nel
+QuerySet, viene generata una singola query SQL `UPDATE`.
+
+
 ## Eliminare istanze modelli
 
 Per eliminare delle istanze di modelli possiamo usare il metodo `delete()` sia sulla istanza che sui
