@@ -37,3 +37,4 @@
     - [Autentichiamo le viste](./ch06-05-autentichiamo-viste.md)
     - [La registrazione degli utenti](./ch06-06-registrazione-utenti.md)
     - [Form più belli](./ch06-07-form-piu-belli.md)
+- [Approfondimenti](./ch07-00-approfondimenti.md)

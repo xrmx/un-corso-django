@@ -9,5 +9,6 @@ possono accedere al nostro backoffice perché hanno dei permessi speciali.
 
 In questo capitolo andremo ad estendere la nostra applicazione per essere fruibile anche ad altri
 utenti implementando delle viste che ci permettano di listare i corsi che abbiamo disponibili,
-filtrarli e vedere il dettaglio di un singolo corso. Inseriremo anche un sistema di login per permettere
-agli utenti registrati e con i privilegi necessari di inserire e modificare i corsi.
+filtrarli e vedere il dettaglio di un singolo corso. Inseriremo anche un sistema di login e
+registrazione per permettere agli utenti di registrarsi e quindi una volta autenticati di inserire
+e modificare i corsi.

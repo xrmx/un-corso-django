@@ -52,12 +52,12 @@ rispettivamente in `static/css` e in `static/js`. Copiamo `jquery-3.6.0.slim.min
 La nostra directory `static` apparirà così:
 
 ```shell
-static/
-static/js
-static/js/bootstrap.bundle.min.js
-static/js/jquery-3.6.0.slim.min.js
-static/css
-static/css/bootstrap.min.css
+static
+├── css
+│   └── bootstrap.min.css
+└── js
+    ├── bootstrap.bundle.min.js
+    └── jquery-3.6.0.slim.min.js
 ```
 
 Ora dobbiamo configurare Django per dirgli di cercare i nostri file statici nella directory `static'`,
