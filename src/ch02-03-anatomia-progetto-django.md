@@ -3,16 +3,17 @@
 Nella nostra directory corrente dovremmo avere due directory, quella di progetto `nuovoprogetto` e
 quella del virtualenv `venv`.
 
-Se andiamo dentro quella di progetto e digitiamo il comando `find` dovremmo vedere qualcosa del genere:
+Se andiamo dentro quella di progetto e digitiamo il comando `tree` dovremmo vedere qualcosa del genere:
 
 ```shell
-./nuovoprogetto
-./nuovoprogetto/urls.py
-./nuovoprogetto/__init__.py
-./nuovoprogetto/settings.py
-./nuovoprogetto/wsgi.py
-./nuovoprogetto/asgi.py
-./manage.py
+.
+├── manage.py
+└── nuovoprogetto
+    ├── asgi.py
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```
 
 Questi sono i file che compongono il nostro nuovo progetto Django, una cosa che salta all'occhio è

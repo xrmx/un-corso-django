@@ -11,15 +11,15 @@ Una volta dato il comando nella nostra directory apparirà una nuova directory c
 La directory dell'applicazione sarà così composta:
 
 ```shell
-homepage/
-homepage/__init__.py
-homepage/admin.py
-homepage/apps.py
-homepage/migrations
-homepage/migrations/__init__.py
-homepage/models.py
-homepage/tests.py
-homepage/views.py
+homepage
+├── admin.py
+├── apps.py
+├── __init__.py
+├── migrations
+│   ├── __init__.py
+├── models.py
+├── tests.py
+└── views.py
 ```
 
 Per default vengono creati i seguenti file:
