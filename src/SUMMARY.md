@@ -39,3 +39,4 @@
     - [Form più belli](./ch06-07-form-piu-belli.md)
 - [Approfondimenti](./ch07-00-approfondimenti.md)
     - [Altri accessi al database](./ch07-01-altri-accessi-al-database.md)
+    - [Autenticazione con LDAP](./ch07-02-autenticazione-ldap.md)
