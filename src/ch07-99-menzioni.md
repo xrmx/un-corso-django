@@ -34,3 +34,9 @@ Possiamo inoltre scrivere per interagire con i nostri modelli tramite l'interfac
 
 Dei casi d'uso per le azioni potrebbe essere aggiornare qualche flag od effetture qualche ricalcolo
 su dei modelli specifici usando le feature dell'admin come i filtri e la ricerca per aiutarci.
+
+## Modelli astratti
+
+Ci sono dei casi in cui potrebbe far comodo ereditare classi che estendono `models.Model` per riusarne
+definiti. Django permette di farlo impostando nella classe *Meta* l'attributo
+[abstract](https://docs.djangoproject.com/en/3.2/topics/db/models/#abstract-base-classes).
