@@ -46,7 +46,8 @@ Running migrations:
 
 Una volta applicate le migrazioni nella nostra directory sarà presente un nuovo file *db.sqlite3*,
 come suggerisce il nome è un database [SQLite](https://sqlite3.org). SQLite viene usato come database
-di default di Django perché non richiede un server ed il database viene salvato in un singolo file.
+di default di Django perché non richiede un server, il database viene salvato in un singolo file ed
+è supportato direttamente da Python.
 
 Ora che abbiamo preparato il database non ci resta che far partire il nostro progetto tramite il web
 server di sviluppo `runserver`:
@@ -54,6 +55,10 @@ server di sviluppo `runserver`:
 ```shell
 python3 manage.py runserver
 ```
+
+Il server di sviluppo si riavvia ogni qual volta modifichiamo dei file del nostro progetto Django,
+per questo motivo se ci sono errori nel nostro codice potrebbe fermarsi. Nel caso serva riavviarlo
+è possibile fermarlo tramite *CONTROL-C* e quindi richiamare nuovamente il comando.
 
 Ora puntate il browser sull'indirizzo [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e si parte.
 

@@ -18,9 +18,9 @@ Se andiamo dentro quella di progetto e digitiamo il comando `tree` dovremmo vede
 
 Questi sono i file che compongono il nostro nuovo progetto Django, una cosa che salta all'occhio è
 il fatto che il nome del progetto viene replicato in una directory. Questo può creare un po' di
-confusione all'inizio ("due directory con lo stesso nome!") ma questa directory serve a contenere
-tutti i file di progetto, riusare lo stesso nome che abbiamo dato al progetto è una buona idea
-per evitare conflitti.
+confusione all'inizio ("due directory con lo stesso nome!") ma la directory `nuovoprogetto` interna
+serve a contenere tutti i file di progetto; riusare lo stesso nome che abbiamo dato al progetto è una
+buona idea per evitare conflitti.
 
 ## manage.py
 
@@ -28,7 +28,9 @@ per evitare conflitti.
  direttamente con `./manage.py` che come script Python con `python3 manage.py`. Non c'è alcuna
  differenza. Una cosa importante da ricordare però è di chiamarlo sempre da questa directory.
 
-Se lo chiamiamo vediamo tutti i comandi, raggruppati per `applicazione` già disponibili.
+Se lo chiamiamo vediamo tutti i comandi, raggruppati per le *applicazioni* già disponibili. Le
+*applicazioni* nel mondo Django sono una sottoparte in cui possiamo dividere il nostro progetto,
+possono essere locali oppure riusabili e distribuite come librerie Python installabili tramite `pip`.
 
 ## I file del progetto
 
@@ -41,12 +43,12 @@ Il file `__init__.py` ha la funzione standard di Python di far diventare questa 
 
 Il file `settings.py` contiene tutte le configurazioni del nostro progetto.
 
-Il file `wsgi.py` contiene l'entrypoint per poter caricare la nostra applicazione in un application
-server che supporta lo standard `WSGI`. `WSGI` è lo standard Python più usato dalle applicazioni
+Il file `wsgi.py` contiene l'entrypoint per poter caricare la nostra applicazione in un *application
+server* che supporta lo standard *WSGI*. *WSGI* è lo standard Python più usato dalle applicazioni
 web Python.
 
 Il file `asgi.py` contiene l'entrypoint per poter caricare la nostra applicazione in un application
-server che supporta il protocollo `ASGI`. `ASGI` è un nuovo protocollo di interfacciamento per
+server che supporta il protocollo *ASGI*. *ASGI* è un nuovo protocollo di interfacciamento per
 applicazioni web Python asincrone sviluppato per Django e adottato anche da altri framework di
 nuova generazione. Il supporto di Django per una esecuzione completamente asincrona è ancora incompleto
 perciò non sarà trattato.
@@ -55,7 +57,14 @@ perciò non sarà trattato.
 
 Il file `settings.py` contiene tutte le configurazioni del nostro progetto. Se lo apriamo possiamo notare
 come tutte le configurazioni siano espresse come variabili in maiuscolo, questa non è solo una
-convenzione ma è necessario per il funzionamento.
+convenzione ma è necessario perchè queste configurazioni siano leggibili; il modulo *settings* infatti
+non si legge direttamente dalla nostra applicazione ma solo attraverso una interfaccia:
+
+```python
+from django.conf import settings
+
+print(settings.DEBUG)
+```
 
 Tra le configurazioni troviamo `SECRET_KEY` che è una stringa generata randomicamente al setup di
 ogni progetto. Questa variable viene usata per firmare crittograficamente perciò deve rimanere segreta e
@@ -63,7 +72,8 @@ non deve essere riusata in progetti diversi. Noi svilupperemo solo un progetto d
 non preoccuparcene.
 
 Un'altra configurazione importante è `DEBUG`, quando abilitata fa restituire a Django più informazioni
-in caso di errore. Queste informazioni però non devono essere esposte in produzione.
+in caso di errore utili per il debug come le configurazioni ed una *stacktrace*. Queste informazioni
+però non devono essere esposte in produzione.
 
 ## Esercizi
 

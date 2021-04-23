@@ -8,7 +8,10 @@ cd corso-django-installazione
 ```
 
 Una volta entrati nella nostra directory possiamo creare un ambiente virtuale dove installeremo
-Django:
+Django. Gli ambienti virtuali servono a creare degli ambienti isolati per evitare di creare conflitti
+con il sistema o con altre applicazioni.
+
+Creiamo l'ambiente virtuale con il comando:
 
 ```shell
 python3 -m venv venv
@@ -24,15 +27,19 @@ source ./venv/bin/activate
 pip install Django wheel
 ```
 
-> source è una funzionalità della shell per importare un file, viene usato per settare delle variabili
-> d'ambiente.
 > In Windows con PowerShell per attivare l'ambiente bisogna eseguire il file venv\Scripts\Activate.ps1
 > Per dettagli consultare la documentazione del
 > [modulo venv](https://docs.python.org/3/library/venv.html).
 
+`source` è una funzionalità della shell per importare un file e viene usato per settare delle variabili
+d'ambiente. Queste variabili di ambiente istruiscono Python di usare la directory `venv` come
+sua directory di lavoro.
+
+D'ora in poi tutti i comandi assumono che l'ambiente virtuale sia attivato.
+
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
-scrittura 3.2. Abbiamo anche installato wheel per aggiungere il supporto all'uso dei pacchetti
-binari pre-compilati.
+scrittura 3.2. Abbiamo anche installato *wheel*, una pacchetto Python che aggiunge il supporto
+all'installazione di pacchetti con binari pre-compilati.
 
 > Django rilascia una nuova versione ogni 8 mesi, ogni versione viene mantenuta per circa un anno.
 > Alcune versioni sono designate come `long-term support (LTS)` e mantenute per circa 3 anni.

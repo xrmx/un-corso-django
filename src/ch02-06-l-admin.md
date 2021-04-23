@@ -1,6 +1,6 @@
 # L'admin
 
-Ora che abbiamo il nostro utente possiamo dare un'occhiata ad un'altra applicazione installata per
+Ora che abbiamo il nostro utente possiamo dare un'occhiata ad un'altra applicazione installata di
 default in Django, l'interfaccia di amministrazione comunemente chiamata `admin`.
 
 Puntiamo il nostro browser su `http://127.0.0.1:8000/admin/`, verremo rediretti su una vista di login
@@ -15,7 +15,8 @@ seguenti componenti:
 l'interfaccia di amministrazione, tutte le operazioni fatte da qui sono registrate.
 
 Nella parte principale invece vediamo tutte le applicazioni ed i modelli delle stesse. In questo caso
-l'unica applicazione presente è `auth` che registra i modelli `Groups` e `Users`.
+l'unica applicazione presente è `auth` che registra i modelli `Groups` e `Users` rispettivamente il
+modello per gestire gruppi di utenti e quello per gestire i singoli utenti.
 
 Se clicchiamo su `Users` andiamo alla pagina che lista tutti gli utenti.
 
