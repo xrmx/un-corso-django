@@ -2,8 +2,8 @@
 
 Ora che abbiamo creato la nostra applicazione homepage cominciamo con l'implementazione di una vista.
 
-Come abbiamo visto le viste sono contenute nel file *views.py* e se lo apriamo con il nostro editor
-ci ritroveremo con qualcosa del genere:
+Come abbiamo visto precedentemente le viste sono contenute nel file *views.py* e se lo apriamo con il
+nostro editor ci ritroveremo con qualcosa del genere:
 
 ```python
 from django.shortcuts import render
@@ -30,7 +30,8 @@ rispondiamo con `This is the homepage`.  Non specifichiamo lo *status code*, per
 
 > Django permette di scrivere le viste anche come funzioni, anche qui non c'è un modo migliore per
 > farlo, dipende dalla necessità. In questo libro usiamo sempre le viste a classi perché per la nostra
-> esperienza permettono di riusare più codice e mantenere uno stile più omogeneo.
+> esperienza permettono di riusare più codice e attenersi alle interfacce già previste da Django
+> tende a far scrivere più omogeneo.
 
 Fatta la vista dobbiamo collegarla al routing delle URL. Il routing delle URL del progetto è definito
 nel file `nuovoprogetto/urls.py`.
@@ -75,4 +76,4 @@ Se puntiamo il browser su `http://127.0.0.1:8000/` dovremmo vedere la nostra hom
 
 - Come possiamo restituire uno status code diverso da 200? Guarda nella documentazione ufficiale di
   [HttpResponse](https://docs.djangoproject.com/en/3.2/ref/request-response/#httpresponse-objects)
-  come possiamo farlo
+  come sia possibile farlo.
