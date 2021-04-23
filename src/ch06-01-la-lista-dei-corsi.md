@@ -71,10 +71,11 @@ nella stessa directory del precedente in `corsi/templates/corsi/base.html`:
 </html>
 ```
 
-Con questo template dovrebbe risultare più chiaro il funzionamento di `block`: permette di delimitare
-un blocco di testo in modo che possa essere sovrascritto da eventuali altri template. Questo permette
-ai template che estendono quello originale di riusare gran parte del testo e riscrivere solo quello
-che hanno bisogno.
+Con questo template dovrebbe risultare più chiaro il funzionamento di `block`. `block` permette di
+delimitare un blocco di testo in modo che possa essere sovrascritto da eventuali altri template.
+In questo esempio il template che eredita `corsi/templates/corsi/base.html` sovrascrive il contenuto
+del blocco `content` che vi è definito. Questo permette di poter riutilizzare buona parte dei template
+che si scrivono e di sostituire solo quello di cui si ha bisogno.
 
 Fatti i template ora dobbiamo collegare la vista al sistema di routing. Per cominciare andiamo a creare
 un file di routing interno all'applicazione in `corsi/urls.py`:
