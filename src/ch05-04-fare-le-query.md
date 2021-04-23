@@ -1,9 +1,9 @@
 # Fare le query
 
-Ora che abbiamo creato i nostro modelli possiamo usare l'interfaccia di Django per creare delle istanze,
-modificarle ed eliminarle.
+Ora che abbiamo creato i nostri modelli possiamo usare l'interfaccia di Django per creare, modificare
+ed eliminare istanze dei nostri modelli.
 
-Questi sono i nostri modelli:
+Questo è il contenuto del file `corsi/models.py`:
 
 ```python
 from django.db import models
@@ -50,7 +50,8 @@ Per eseguire il codice qua sotto useremo la shell Django, richiamabile con il co
 python3 manage.py shell
 ```
 
-La shell si presenterà come una REPL simile a quella di Python:
+La shell si presenterà come una
+[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) simile a quella di Python:
 
 ```
 Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
@@ -143,14 +144,14 @@ Per recuperare tutte le istanze si usa `.all()`:
 Categoria.objects.all()
 ```
 
-Per prende tutti i corsi di una *istanza* di categoria possiamo usare il *Manager di relazione*
+Per prendere tutti i corsi di una *istanza* di categoria possiamo usare il *Manager di relazione*
 `corso_set`:
 
 ```python
 categoria.corso_set.all()
 ```
 
-Il risultato sarà un QuerySet di istanze del modello `Corso`.
+Il nome del manager è per default il nome del modello che ha la `ForeignKey` unito alla stringa `_set`.
 
 Per recuperare invece più di una istanza filtrandola per qualche parametro si usa `.filter()`:
 
@@ -168,11 +169,21 @@ Corso.objects.filter(docenti=docente)
 Corso.objects.filter(docenti__username="docente")
 ```
 
-Sia `all()` che `filter()` restituiscono dei `QuerySet`. I `QuerySet` sono *lazy* nel senso che sono
-valutati solo quando ci vengono fatte sopra delle operazioni come iterarci sopra o stamparli. Nei nostri
-esempi sono stati valutati perché nella shell viene stampato la rappresentazione dell'output delle
-istruzioni date. Ad esempio se assegniamo un `QuerySet` ad una variabile, il `QuerySet` non sarebbe
-valutato e quindi la query SQL sottostante non sarebbe eseguita.
+Sia `all()` che `filter()` restituiscono dei `QuerySet`. I `QuerySet` sono delle classi iterabili
+contenenti istanze del modello su cui è stata fatta la query. Ad esempio possiamo stampare i singoli
+modelli presenti:
+
+```python
+qs = Categoria.objects.all()
+for categoria in qs:
+    print(categoria)
+```
+
+I `QuerySet` sono *lazy* nel senso che sono valutati solo quando ci vengono fatte sopra delle operazioni
+come iterarci sopra o stamparli. Nei nostri esempi sono stati valutati perché nella shell viene stampata
+la rappresentazione dell'output delle istruzioni date.
+Ad esempio se assegniamo un `QuerySet` ad una variabile, il `QuerySet` non viene valutato e quindi la
+query SQL sottostante non viene eseguita.
 
 Possiamo filtrare le nostre istanze anche in modo negativo cioè specificando dei criteri per
 l'esclusione usando il metodo `.exclude()`:

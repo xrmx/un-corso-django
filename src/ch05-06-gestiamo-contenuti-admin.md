@@ -1,7 +1,9 @@
 # Gestiamo i contenuti in Admin
 
 Come abbiamo visto in precedenza Django offre una interfaccia già pronta per fare operazione di
-inserimento, aggiornamento e cancellazione di dati chiamata *Admin*.
+inserimento, aggiornamento e cancellazione di dati chiamata *Admin*. Per poter visualizzare
+i nostri modelli nell'interfaccia di amministrazione dobbiamo *registrarli* (dal nome della funzione
+`admin.register`).
 
 Registriamo quindi i modelli della nostra applicazione `corsi` in admin modificando `corsi/admin.py`:
 

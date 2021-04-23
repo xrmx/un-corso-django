@@ -3,7 +3,6 @@
 Come abbiamo visto il nostro progetto `catalogo` dovrà contenere una libreria di corsi. Procediamo
 quindi a creare una nuova applicazione `corsi`:
 
-
 ```shell
 python3 manage.py startapp corsi
 ```
@@ -44,7 +43,7 @@ class Corso(models.Model):
 
 La prima cosa da dire è che i modelli in Django seguono il pattern [Active Record](https://en.wikipedia.org/wiki/Active_record_pattern) cioè c'è una mappatura 1:1 tra una classe ed una tabella in database,
 dove ogni istanza della classe identifica una riga.
-Tutte le classi che ereditano da `models.Model` implementano questo pattern.
+Di norma tutte le classi che ereditano da `models.Model` implementano questo pattern.
 
 Gli attributi della classe quindi sono le colonne della nostra tabella in database. Ogni attributo è una
 istanza di una classe `*Field`. Ognuna di queste classi implementa un tipo diverso di dato nel database
