@@ -32,7 +32,10 @@ eseguita tramite il comando:
 ```shell
 docker-compose -f postgres.yml up
 ```
+
 > Il server salverà i dati in una directory relativa al percorso del file yaml
+
+Questo comando eseguirà una istanza di PostgreSQL, per terminarla basterà premere *CONTROL-C*.
 
 ## Client MariaDB / MySQL
 
@@ -61,15 +64,19 @@ docker-compose -f mariadb.yml up
 
 > Il server salverà i dati in una directory relativa al percorso del file yaml
 
-Oltre al database viene fatta girare anche una interfaccia di configurazione. Tramite
-[questa interfaccia](http://127.0.0.1:8080/?server=db&username=root&sql=) dopo aver fatto il login
-usando `root` come utente e `password` come password inseriamo il seguento comando SQL:
+Questo comando eseguirà una istanza di MariaDB ed una interfaccia di configurazione del database; per
+terminarle basterà premere *CONTROL-C*.
+
+Tramite [l'interfaccia di configurazione](http://127.0.0.1:8080/?server=db&username=root&sql=),
+dopo aver fatto il login usando `root` come utente e `password` come password, inseriamo il seguente
+comando SQL:
 
 ```
 GRANT ALL PRIVILEGES ON test_mariadb.* TO 'mariadb';
 ```
 
-Questo ci servirà per poter eseguire i test.
+Questo comando dà al nostro utente `mariadb` il permesso per creare il database che ci servirà per
+poter eseguire i test automatici.
 
 ## Esercizi
 

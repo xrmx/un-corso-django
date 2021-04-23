@@ -50,14 +50,14 @@ class HomepageView(TemplateView):
 Ci sono un paio di cose su cui soffermarsi:
 
 - Il fatto di riusare una vista generica rende esplicito il tipo di vista e rende anche molto breve il
-  nostro codice. Rende anche le cose piuttosto magiche ad una prima occhiata.
+  nostro codice. Rende anche le cose piuttosto fumose ad una prima occhiata.
 - `get_context_data` è il metodo che dobbiamo estendere per poter aggiungere il messaggio di benvenuto
   alle variabili che vengono passate al template durante il suo rendering.
 
 Ora puntiamo il browser su [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-Oops, qualcosa non sta funzionando! Django non riesce a trovare il template `homepage/index.html`
-nonostate noi l'abbiamo creato.
+Qualcosa non sta funzionando e ci viene mostrata una pagina di errore.
+Django non riesce a trovare il template `homepage/index.html` nonostate noi l'abbiamo creato.
 Soffermiamoci un secondo su questa pagina:
 - Nella parte gialla vediamo il riassunto dell'errore con l'eccezione e le informazioni di base sulla
   istanza di Django
@@ -68,8 +68,9 @@ Soffermiamoci un secondo su questa pagina:
 - Quindi le informazioni sulla richiesta HTTP
 - Infine tutti i valori presenti nel file `settings.py`
 
-La pagina di errore che vedete è governata dal flag `DEBUG` nel file `settings.py` perché non vogliamo
-esporre tutte queste informazioni su un sito pubblico.
+La pagina di errore che vedete è governata dal flag `DEBUG` nel file `settings.py`, nei sistemi di
+produzione deve essere *sempre* disabilitata perché non vogliamo esporre queste informazioni sensibili
+pubblicamente.
 
 Chiusa la parentesi sulla pagina di debug correggiamo il nostro errore. Come detto prima Django cerca
 automaticamente i templates nella directory `templates` di ogni applicazione; lo fa però solo per le
