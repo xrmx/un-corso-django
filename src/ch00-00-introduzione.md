@@ -1,9 +1,9 @@
 # Introduzione
 
-Questo corso è fatto per programmatori Python con esperienza di sviluppo di applicazioni web, anche
- in altri linguaggi, che vogliono impratichirsi con il framework Django.
+Questo corso è pensato per programmatori Python con esperienza di sviluppo di applicazioni web, anche
+in altri linguaggi, che vogliono impratichirsi con il framework Django.
 
-Si assume una conoscenza almeno basica di Python e dei suoi tool standard come pip e virtualenv.
+Si assume una conoscenza di base di Python e dei suoi tool standard come pip e virtualenv.
 Si assume anche un conoscenza base di git.
 
 Il codice presente in questo materiale assume una versione di Python 3.6 o superiore.
