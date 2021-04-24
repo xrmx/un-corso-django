@@ -25,8 +25,8 @@ Il supporto a PostgreSQL richiede l'installazione del driver [psycopg2](https://
 pip install pyscopg2-binary
 ```
 
-Una volta scaricata la configurazione Docker Compose
-[postgres.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/postgres.yml) può essere
+Se si vuole usare il server tramite Docker, una volta scaricata la configurazione Docker Compose
+[postgres.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/postgres.yml), può essere
 eseguita tramite il comando:
 
 ```shell
@@ -54,8 +54,8 @@ Quindi possiamo procedere ad installare il driver per Python:
 pip install mysqlclient
 ```
 
-Una volta scaricata la configurazione Docker Compose
-[mariadb.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/mariadb.yml) può essere
+Se si vuole usare il server tramite Docker, una volta scaricata la configurazione Docker Compose
+[mariadb.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/mariadb.yml), può essere
 eseguita tramite il comando:
 
 ```shell
