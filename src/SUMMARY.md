@@ -2,6 +2,7 @@
 
 [Un corso Django](./titolo.md)
 [Introduzione](./ch00-00-introduzione.md)
+[Requisiti](./ch00-01-requisiti.md)
 
 ## Cominciamo
 
