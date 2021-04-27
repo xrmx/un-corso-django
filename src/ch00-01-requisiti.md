@@ -18,5 +18,5 @@ Tutte le ultime versioni stabili di Debian ed Ubuntu hanno una versione di Pytho
 Possiamo quindi installare la versione di sistema con il seguente comando:
 
 ```shell
-sudo apt install python3 python3-venv python3-pip
+sudo apt install python3 python3-venv python3-pip python3-distutils
 ```
