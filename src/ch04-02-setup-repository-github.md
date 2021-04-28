@@ -10,7 +10,7 @@ Vogliamo creare un repository vuoto quindi non andremo a selezionare nessuna del
 Infine creiamo il repository con `Create repository`, saremmo rediretti nella pagina del repository
 appena creato.
 
-Dalla pagina del nostro repository `catalogo` clicchiamo *Code* e copiamo l'url.
+Dalla pagina del nostro repository `catalogo` copiamo l'url del repository.
 
 Ora dalla directory del repository git che abbiamo creato configuriamo l'url che abbiamo copiato come
 server remoto al quale invieremo i cambiamenti:
@@ -28,5 +28,5 @@ git push --set-upstream origin main
 ```
 
 Apri il tuo browser all'indirizzo del tuo repository (qualcosa di simile a
-`https://github.com:iltuousername/catalogo`  ma con il tuo username GitHub al posto di *iltuousername*)
+`https://github.com/iltuousername/catalogo`  ma con il tuo username GitHub al posto di *iltuousername*)
 per leggere il tuo `README.md`.
