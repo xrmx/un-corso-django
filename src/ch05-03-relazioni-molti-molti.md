@@ -9,7 +9,7 @@ mettere in relazione.
 Modifichiamo il modello `Corso` per aggiungere il campo `docenti`:
 
 ```python
-from django.contrib.auth.models import Corso
+from django.contrib.auth.models import User
 
 ...
 
