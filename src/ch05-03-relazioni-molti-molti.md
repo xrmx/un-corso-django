@@ -9,6 +9,10 @@ mettere in relazione.
 Modifichiamo il modello `Corso` per aggiungere il campo `docenti`:
 
 ```python
+from django.contrib.auth.models import Corso
+
+...
+
 class Corso(models.Model):
     titolo = models.CharField(max_length=100)
     descrizione = models.TextField()

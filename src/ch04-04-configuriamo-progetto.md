@@ -3,7 +3,17 @@
 Come abbiamo visto le configurazioni del nostro progetto sono disponibili in un file chiamato
 `settings.py` in una directory omonima del progetto, quindi nel nostro caso in `catalogo/settings.py`.
 
-Apriamo il file e localizziamo la configurazione `DATABASES` che dovrebbe essere simile a questa:
+Apriamo il file con il nostro editor, cerchiamo la configurazione `TIME_ZONE` ed aggiorniamola per
+essere in linea con quella configurata nel nostro computer:
+
+```python
+TIME_ZONE = 'Europe/Rome'
+```
+
+Se il tuo computer risiede in un fuso orario diverso puoi consultare la
+[lista dei nomi su wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+Quindi localizziamo la configurazione `DATABASES` che dovrebbe essere simile a questa:
 
 ```python
 DATABASES = {
