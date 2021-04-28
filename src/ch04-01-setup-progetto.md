@@ -47,7 +47,15 @@ Ora la nostra directory corrente dovrebbe contenere i seguenti file e directory:
 catalogo
 manage.py
 README.md
+.git
 .gitignore
+```
+
+Se non hai mai usato git devi configurare il nome e l'email con cui farai i commit:
+
+```shell
+git config --global user.name "Mio Nome"
+git config --global user.email mia@email.it
 ```
 
 Ora facciamo un commit con tutti i nostri file:
