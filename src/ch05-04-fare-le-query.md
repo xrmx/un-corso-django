@@ -254,7 +254,7 @@ Corso.objects.filter(categoria=categoria).exists()
 Per aggiornare di un QuerySet si usa il metodo `update()`:
 
 ```python
-Corso.objects.filter(titolo="titolo").update(categoria=categoria)
+Corso.objects.filter(titolo="Sviluppo software").update(categoria=categoria)
 ```
 
 Usare `update()` su un QuerySet non implica chiamare il metodo `save()` di ogni oggetto presente nel

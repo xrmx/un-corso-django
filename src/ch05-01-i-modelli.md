@@ -52,7 +52,7 @@ Il backend `mysql` genera il seguente SQL per la classe `Corso`:
 
 ```sql
 CREATE TABLE `corsi_corso` (
-    `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `titolo` varchar(100) NOT NULL,
     `descrizione` longtext NOT NULL,
     `creato` datetime(6) NOT NULL,

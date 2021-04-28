@@ -70,7 +70,8 @@ Rifacciamo partire il `runserver` se lo abbiamo spento con il comando:
 python3 manage.py runserver
 ```
 
-Se puntiamo il browser su `http://127.0.0.1:8000/` dovremmo vedere la nostra homepage.
+Se puntiamo il browser su [http://127.0.0.1:8000/](http://127.0.0.1:8000/) dovremmo vedere la nostra
+homepage.
 
 ## Esercizi
 

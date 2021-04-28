@@ -45,7 +45,7 @@ Il supporto per MariaDB e MySQL richiede l'installazione del driver
 Per sistemi Linux come Debian o Ubuntu usare il seguente comando per installare le dipendenze:
 
 ```shell
-sudo apt build-dep python3-mysqldb
+sudo apt install build-essential python3-dev libmariadb-dev
 ```
 
 Quindi possiamo procedere ad installare il driver per Python:

@@ -128,4 +128,5 @@ git push origin main
 
 ## Esercizi
 
-Leggi la documentazione sui [templates](https://docs.djangoproject.com/en/3.2/topics/templates/)
+Leggi la documentazione sui [templates](https://docs.djangoproject.com/en/3.2/topics/templates/) e sul
+linguaggio dei [templates di Django](https://docs.djangoproject.com/en/3.2/ref/templates/language/).

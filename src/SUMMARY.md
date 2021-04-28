@@ -38,6 +38,7 @@
     - [Autentichiamo le viste](./ch06-05-autentichiamo-viste.md)
     - [La registrazione degli utenti](./ch06-06-registrazione-utenti.md)
     - [Form più belli](./ch06-07-form-piu-belli.md)
+    - [Estendiamo l'applicazione corsi](./ch06-08-estendiamo-applicazione-corsi.md)
 - [Approfondimenti](./ch07-00-approfondimenti.md)
     - [Altri accessi al database](./ch07-01-altri-accessi-al-database.md)
     - [Autenticazione con LDAP](./ch07-02-autenticazione-ldap.md)

@@ -3,8 +3,8 @@
 Ora che abbiamo il nostro utente possiamo dare un'occhiata ad un'altra applicazione installata di
 default in Django, l'interfaccia di amministrazione comunemente chiamata `admin`.
 
-Puntiamo il nostro browser su `http://127.0.0.1:8000/admin/`, verremo rediretti su una vista di login
-tramite la quale possiamo usare le credenziali dell'utente appena creato.
+Puntiamo il nostro browser su [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/), verremo
+rediretti su una vista di login tramite la quale possiamo usare le credenziali dell'utente appena creato.
 
 Una volta loggati ci ritroviamo nell'interfaccia di amministrazione dove tra gli altri troveremo i
 seguenti componenti:
