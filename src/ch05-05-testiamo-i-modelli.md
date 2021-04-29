@@ -12,10 +12,10 @@ touch corsi/tests/__init__.py
 git mv corsi/tests.py corsi/tests/test_models.py
 ```
 
-Apriamo il file `corsi/test_models.py` con il nostro editor e cominciamo a scrivere dei test per il
+Apriamo il file `corsi/tests/test_models.py` con il nostro editor e cominciamo a scrivere dei test per il
 modello `Categoria`:
 
-```
+```python
 from django.test import TestCase
 
 from corsi.models import Categoria
