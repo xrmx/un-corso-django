@@ -32,6 +32,10 @@ Quindi dobbiamo estendere la vista per supportare questa funzionalità. Andremo 
 `CorsoListView` in questo modo:
 
 ```python
+from django.db.models import Q
+
+...
+
 class CorsoListView(ListView):
     queryset = Corso.objects.all()
 
