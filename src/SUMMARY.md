@@ -44,4 +44,5 @@
     - [Autenticazione con LDAP](./ch07-02-autenticazione-ldap.md)
     - [Autenticazione e permessi](./ch07-03-autenticazione-permessi.md)
     - [Validazione nei form](./ch07-04-validazione-form.md)
+    - [Internazionalizzazione e Localizzazione](./ch07-05-i18n-l10n.md)
     - [Menzioni](./ch07-99-menzioni.md)
