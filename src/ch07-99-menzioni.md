@@ -38,5 +38,5 @@ su dei modelli specifici usando le feature dell'admin come i filtri e la ricerca
 ## Modelli astratti
 
 Ci sono dei casi in cui potrebbe far comodo ereditare classi che estendono `models.Model` per riusarne
-definiti. Django permette di farlo impostando nella classe *Meta* l'attributo
+i campi definiti. Django permette questo pattern impostando nella classe *Meta* l'attributo
 [abstract](https://docs.djangoproject.com/en/3.2/topics/db/models/#abstract-base-classes).
