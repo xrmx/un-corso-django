@@ -19,7 +19,7 @@ server remoto al quale invieremo i cambiamenti:
 git remote add origin git@github.com:iltuousername/catalogo.git
 ```
 
-> ricorda di sostituire *iltuousername* con il tuo username di GitHub
+> Ricorda di sostituire *iltuousername* con il tuo username di GitHub
 
 Fatto questo possiamo inviare il nostro codice a GitHub:
 
