@@ -8,8 +8,7 @@ saranno promossi in una sezione separata.
 Django permette di annotare ogni oggetto di un QuerySet usando delle
 [espressioni](https://docs.djangoproject.com/en/3.2/ref/models/expressions/) tramite il metodo
 [annotate](https://docs.djangoproject.com/en/3.2/ref/models/querysets/#annotate).
-
-Questo strumento è un ottimo alleato per sfruttare le funzioni più avanzate del database.
+Questo strumento permette di demandare più lavoro al database sfruttandone le funzioni più avanzate.
 
 ## Query N+1
 
