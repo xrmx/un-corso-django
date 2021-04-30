@@ -20,11 +20,10 @@ python3 -m venv venv
 Abbiamo chiamato il nostro ambiente `venv` come convenzione, ma ovviamente possiamo usare un nome
 diverso.
 
-Una volta creato il nostro ambiente, lo attiviamo e procediamo con l'installazione:
+Una volta creato il nostro ambiente, lo attiviamo:
 
 ```shell
 source ./venv/bin/activate
-pip install Django wheel
 ```
 
 > In Windows con PowerShell per attivare l'ambiente bisogna eseguire il file venv\Scripts\Activate.ps1
@@ -36,6 +35,18 @@ d'ambiente. Queste variabili di ambiente istruiscono Python di usare la director
 sua directory di lavoro.
 
 D'ora in poi tutti i comandi assumono che l'ambiente virtuale sia attivato.
+
+Gli ambienti virtuali possono essere disattivati con:
+
+```shell
+deactivate
+```
+
+Quindi, con l'ambiente virtuale attivo, procediamo con l'installazione:
+
+```shell
+pip install Django wheel
+```
 
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
 scrittura 3.2. Abbiamo anche installato *wheel*, una pacchetto Python che aggiunge il supporto

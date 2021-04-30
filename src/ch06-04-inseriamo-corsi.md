@@ -81,11 +81,13 @@ urlpatterns = [
     path("corsi/", views.CorsoListView.as_view(), name="corsi-list"),
     path("corsi/<int:pk>/", views.CorsoDetailView.as_view(), name="corsi-detail"),
     path("corsi/crea/", views.CorsoCreateView.as_view(), name="corsi-create"),
-    path("corsi/<int:pk>/aggiorna", views.CorsoUpdateView.as_view(), name="corsi-update"),
+    path("corsi/<int:pk>/aggiorna/", views.CorsoUpdateView.as_view(), name="corsi-update"),
 ]
 ```
 
-Quindi se puntiamo il browser all'indirizzo [http://127.0.0.1:8000/corsi/corsi/crea](http://127.0.0.1:8000/corsi/corsi/crea) dovremmo vedere il form per l'inserimento di un nuovo corso.
+Quindi se puntiamo il browser all'indirizzo
+[http://127.0.0.1:8000/corsi/corsi/crea/](http://127.0.0.1:8000/corsi/corsi/crea/) dovremmo vedere il
+form per l'inserimento di un nuovo corso.
 
 La vista per modificare un corso invece è un scomoda da chiamare direttamente, quindi aggiungiamo i link
 a queste viste nei template delle altre viste.

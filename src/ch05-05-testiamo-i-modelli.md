@@ -53,7 +53,8 @@ presenti nella directory `tests` della nostra applicazione presenti in file il c
 I test vengono raggruppati in classi che ereditano da `TestCase`, i singoli test sono implementati 
 come metodi di questa classe ed il loro nome deve cominciare con `test_`. Ogni test viene eseguito
 in una transazione del database che poi viene annullata, quindi le query fatte durante ogni test non
-inficiano gli altri.
+inficiano gli altri. I test usano un database diverso rispetto a quello usato dal progetto, per default
+viene usato come nome quello configurato in `settings.py` prefissato da *test_*.
 
 Facciamo girare i test con il comando:
 
@@ -74,6 +75,8 @@ git push origin main
 Scrivi dei test analoghi per il modello `Corso`, salvali su git e pubblicali su GitHub.
 
 Leggi [l'overview sui test](https://docs.djangoproject.com/en/3.2/topics/testing/overview/) di Django.
+
+Scopri nella documentazione come puoi far [eseguire un singolo test](https://docs.djangoproject.com/en/3.2/topics/testing/overview/#running-tests).
 
 Consulta la [lista degli assert](https://docs.python.org/3/library/unittest.html#assert-methods) del
 modulo `unittest` di Python.
