@@ -38,6 +38,7 @@ dei filtri, tramite i quali possiamo filtrare le nostre istanze.
 Se clicchiamo nello username dell'utente che abbiamo creato andiamo nel form di modifica dello stesso,
 non entriamo nei dettagli degli attributi degli utenti, facciamo solo caso ai bottoni al fondo
 della pagina che ci permettono di cancellare o modificare il nostro utente.
+Se vediamo degli avvertimenti sulle date non preoccupiamoci.
 
 Tutte queste funzionalità sono rese disponibili nell'interfaccia di amministrazione ai nostri modelli
 in modo dichiarativo senza doverle programmare.
