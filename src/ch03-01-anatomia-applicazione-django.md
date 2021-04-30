@@ -4,7 +4,7 @@ Nel mondo Django le applicazioni sono i componenti con cui costruiamo il nostro 
 forniscono al progetto le sue funzionalità. L'interfaccia di amministrazione che abbiamo visto
 precedentemente è fornita da una applicazione chiamata `admin`.
 
-Per creare una applicazione Django dobbiamo usare il comando *startapp*. Il comando richiede il nome
+Per creare una applicazione Django dobbiamo usare il comando `startapp`. Il comando richiede il nome
 dell'applicazione come parametro, dal momento che vogliamo creare una homepage useremo:
 
 ```shell
