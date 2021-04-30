@@ -61,7 +61,7 @@ urlpatterns = [
 ]
 ```
 
-Il sistema di routing si aspetta una `callable` perciò dobbiamo chiamare il metodo `as_view()` della
+Il sistema di routing si aspetta una *callable* perciò dobbiamo chiamare il metodo `as_view()` della
 nostra classe.
 
 Rifacciamo partire il `runserver` se lo abbiamo spento con il comando:

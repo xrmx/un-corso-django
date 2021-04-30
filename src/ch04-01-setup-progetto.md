@@ -29,7 +29,7 @@ git branch -m main
 ```
 
 Ottimo, abbiamo inizializzato il nostro repository! Prima di effettuare il nostro primo commit
-creiamo un file `README.md`, l'estensione `.md` sta per Markdown il formato di markup che usa GitHub,
+creiamo un file `README.md`, l'estensione *.md* sta per Markdown il formato di markup che usa GitHub,
 con il seguente contenuto:
 
 ```markdown
@@ -70,4 +70,4 @@ git commit -m "Primo commit"
 ## Esercizi
 
 Se non ti senti sicuro con `git` puoi leggere questa
-[introduzione](https://guides.github.com/introduction/git-handbook/)
+[introduzione](https://guides.github.com/introduction/git-handbook/).

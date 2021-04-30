@@ -83,4 +83,4 @@ git push origin main
 ## Esercizi
 
 Guarda le varie opzioni disponibili per la
-[configurazione del database](https://docs.djangoproject.com/en/3.2/ref/settings/#databases)
+[configurazione del database](https://docs.djangoproject.com/en/3.2/ref/settings/#databases).

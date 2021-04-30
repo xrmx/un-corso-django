@@ -8,9 +8,9 @@ per caso. Fedele al suo motto ogni nuovo progetto Django infatti ha per default 
 attive.
 
 Alcuni esempi di applicazioni già incluse sono l'autenticazione, la gestione delle sessioni e
-una interfaccia di inserimento di contenuti chiamata `admin`.
+una interfaccia di inserimento di contenuti chiamata *admin*.
 Queste applicazioni possono aver bisogno di persistenza e quindi di creare tabelle in un database SQL.
-La creazione e la modifica delle tabelle nel database viene fatta tramite un sistema di `migrazioni`.
+La creazione e la modifica delle tabelle nel database viene fatta tramite un sistema di *migrazioni*.
 
 Applichiamo le migrazioni richieste dal nostro progetto Django con il comando:
 
