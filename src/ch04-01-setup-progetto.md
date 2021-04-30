@@ -25,7 +25,6 @@ nella directory del progetto Django `catalogo` ed inizializziamo il repository:
 ```shell
 cd catalogo
 git init
-git branch -m main
 ```
 
 Ottimo, abbiamo inizializzato il nostro repository! Prima di effettuare il nostro primo commit
@@ -38,7 +37,7 @@ con il seguente contenuto:
 Un progetto Django di studio per gestire dei corsi
 ```
 
-Quindi scarichiamo un file [gitignore](https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore) per evitare di inserire in git file che invece vogliamo ignorare e salviamolo nella nostra
+Quindi scarichiamo un file [gitignore](https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore) per evitare di inserire in `git` i file che invece vogliamo ignorare e salviamolo nella nostra
 directory come `.gitignore`.
 
 Ora la nostra directory corrente dovrebbe contenere i seguenti file e directory:
@@ -51,7 +50,7 @@ README.md
 .gitignore
 ```
 
-Se non hai mai usato git devi configurare il nome e l'email con cui farai i commit:
+Se non hai mai usato `git` devi configurare il nome e l'email con cui farai i commit:
 
 ```shell
 git config --global user.name "Mio Nome"
@@ -65,7 +64,13 @@ git add .
 git commit -m "Primo commit"
 ```
 
-> Non serve che usi git da linea di comando, puoi usare il tuo IDE
+Infine configuriamo *main* come *branch* di default di `git`:
+
+```shell
+git branch -m main
+```
+
+> Non serve che usi `git` da linea di comando, puoi usare il tuo IDE
 
 ## Esercizi
 
