@@ -89,8 +89,8 @@ Abbiamo modificato la chiave `DIRS` aggiungendo la directory che abbiamo creato.
 del path della directory usando `/` per unire due percorsi fomati da istanze di `Path` del modulo
 [pathlib](https://docs.python.org/3/library/pathlib.html).
 
-La vista di login si aspetta un template nel percorso `registration/login` quindi creiamo la directory
-dentro templates:
+La vista di login si aspetta un template con percorso `registration/login.html` quindi creiamo la
+directory `registration` dentro a `templates`:
 
 ```shell
 mkdir -p templates/registration
