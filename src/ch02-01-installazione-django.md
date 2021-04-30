@@ -53,7 +53,7 @@ scrittura 3.2. Abbiamo anche installato *wheel*, una pacchetto Python che aggiun
 all'installazione di pacchetti con binari pre-compilati.
 
 > Django rilascia una nuova versione ogni 8 mesi, ogni versione viene mantenuta per circa un anno.
-> Alcune versioni sono designate come `long-term support (LTS)` e mantenute per circa 3 anni.
+> Alcune versioni sono designate come *long-term support* (LTS) e mantenute per circa 3 anni.
 > Quale versione usare dipende dal tipo di progetto. Django 3.2 è una versione LTS.
 
 Molto bene, abbiamo installato Django!
