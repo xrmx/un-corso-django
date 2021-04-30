@@ -1,15 +1,7 @@
 # Autenticazione e permessi
 
 Come abbiamo visto esiste già in Django una applicazione per gestire gli utenti chiamata
-`django.contrib.auth`.
-
-`django.contrib.auth` permette una buona dose di personalizzazione permettendo anche di sostituire
-il modello usato per l'utente. Può essere una buona idea usare un modello specifico quando si fanno
-progetti nuovi e si hanno esigenze particolari, ad esempio richieste di performance estreme, per cui
-non vogliamo pagare il costo di una *join SQL* per recuperare dati accessori per l'utente.
-In questi casi esiste una
-[ricca documentazione ufficiale](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/) da
-consultare.
+`auth` in `django.contrib`.
 
 Ogni istanza di utente ha tre flag:
 - `is_active`, che serve per definire se un utente è attivo o meno. Quando non è flaggato l'utente non
@@ -68,7 +60,7 @@ class CorsoCreateView(UserPassesTestMixin, CreateView):
         return utente.is_active and utente.is_staff
 ```
 
-> nel caso l'utente non sia loggato self.request.user è una istanza di `AnonymousUser` che offre la
+> Nel caso l'utente non sia loggato self.request.user è una istanza di `AnonymousUser` che offre la
 > stessa interfaccia di un utente loggato
 
 Allo stesso possiamo usare il mixin `PermissionRequiredMixin` per limitare l'accesso ad una vista solo
@@ -83,6 +75,16 @@ class CorsoCreateView(PermissionRequiredMixin, CreateView):
     form_class = CorsoForm
     permission_required = ('corsi.add_corso',)
 ```
+
+### Usare un altro modello utente
+
+`auth` permette una buona dose di personalizzazione permettendo anche di sostituire
+il modello usato per l'utente. Può essere una buona idea usare un modello specifico quando si fanno
+progetti nuovi e si hanno esigenze particolari, ad esempio richieste di performance estreme, per cui
+non vogliamo pagare il costo di una *join SQL* per recuperare dati accessori per l'utente.
+In questi casi esiste una
+[ricca documentazione ufficiale](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/) da
+consultare.
 
 ## Esercizi
 

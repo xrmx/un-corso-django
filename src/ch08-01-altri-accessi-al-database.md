@@ -66,7 +66,7 @@ DATABASES = {
 }
 ```
 
-Semplicemente configurando la connessione ad un database possiamo scrivere direttamente le nostr query
+Semplicemente configurando la connessione ad un database possiamo scrivere direttamente le nostre query
 usando quel database:
 
 ```python
@@ -92,7 +92,7 @@ python manage.py inspectdb --database vecchio_database > models.py
 
 `inspectdb` potrebbe non riuscire a recuperare tutti i campi in modo fedele perciò sarò comunque
 necessario un processo manuale di verifica.
-python manage.py inspectdb > models.py
+
 Per usare un database specifico per popolare un *Queryset* bisogna specificare il database usando il
 metodo `using()`:
 
