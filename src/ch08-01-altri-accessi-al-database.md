@@ -87,7 +87,7 @@ per gestire il catalogo dei corsi potremmo creare una applicazione `corsi_legacy
 `models.py` col seguente comando:
 
 ```shell
-python manage.py inspectdb --database vecchio_database > models.py
+python3 manage.py inspectdb --database vecchio_database > models.py
 ```
 
 `inspectdb` potrebbe non riuscire a recuperare tutti i campi in modo fedele perciò sarò comunque
