@@ -60,7 +60,7 @@ static
     └── jquery-3.6.0.slim.min.js
 ```
 
-Ora dobbiamo configurare Django per dirgli di cercare i nostri file statici nella directory `static'`,
+Ora dobbiamo configurare Django per dirgli di cercare i nostri file statici nella directory `static`,
 creiamo il seguente vicino alla configurazione `STATIC_URL` in `catalogo/settings.py`:
 
 ```python
