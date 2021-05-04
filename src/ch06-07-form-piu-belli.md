@@ -194,6 +194,6 @@ git push origin main
 
 ## Esercizi
 
-Consulta la documentazione sui [file static](https://docs.djangoproject.com/en/3.2/howto/static-files/).
+Consulta la documentazione sui [file statici](https://docs.djangoproject.com/en/3.2/howto/static-files/).
 
 Leggi la documentazione di *django-crispy-forms* sul [filtro crispy](https://django-crispy-forms.readthedocs.io/en/latest/filters.html) e sul [tag crispy](https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html#crispy-tag-with-form).
