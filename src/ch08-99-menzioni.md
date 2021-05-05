@@ -5,10 +5,12 @@ saranno promossi in una sezione separata.
 
 ## Funzioni di aggregazione
 
-Django permette di annotare ogni oggetto di un QuerySet usando delle
-[espressioni](https://docs.djangoproject.com/en/3.2/ref/models/expressions/) tramite il metodo
-[annotate](https://docs.djangoproject.com/en/3.2/ref/models/querysets/#annotate).
-Questo strumento permette di demandare più lavoro al database sfruttandone le funzioni più avanzate.
+Django permette di annotare ed aggregare valori nei QuerySet usando delle
+[espressioni](https://docs.djangoproject.com/en/3.2/ref/models/expressions/) tramite i metodi
+[annotate](https://docs.djangoproject.com/en/3.2/ref/models/querysets/#annotate) ed
+[aggregate](https://docs.djangoproject.com/en/3.2/ref/models/querysets/#django.db.models.query.QuerySet.aggregate). Si consiglia la lettura della documentazione ufficiale sulle
+[aggregazioni](https://docs.djangoproject.com/en/3.2/topics/db/aggregation/).
+Questi strumenti permettono di demandare più lavoro al database sfruttandone le funzioni più avanzate.
 
 ## Query N+1
 
