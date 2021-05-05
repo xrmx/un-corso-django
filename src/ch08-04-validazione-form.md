@@ -60,7 +60,7 @@ Django offre altri due metodo per validare un form: il metodo `clean()` del form
 `clean_<nomecampo>()` per validare ogni singolo campo. A differenza del sistema col validatore questi
 metodi permettono di cambiare il contenuto del campo che stanno controllando.
 
-Possiamo reimplentare il form precedente validando il singolo campo in questo modo:
+Possiamo reimplementare il form precedente validando il singolo campo in questo modo:
 
 ```python
 class RicercaForm(forms.Form):
