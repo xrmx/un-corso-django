@@ -11,4 +11,6 @@ Tutti gli esempi vengono fatti per un sistema operativo UNIX-like ed è previsto
 
 Questa opera è rilasciata con una licenza [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Internazionale](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.it).
 
-Il sorgente di questa opera è disponibile su [GitHub](https://github.com/xrmx/un-corso-django).
+Il sorgente di questa opera è disponibile su [GitHub](https://github.com/xrmx/un-corso-django) ed è
+possibile riportare eventuali errori
+[aprendo una issue](https://github.com/xrmx/un-corso-django/issues/new).
