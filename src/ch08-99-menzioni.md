@@ -35,6 +35,15 @@ Sempre nella classe *Meta* si possono configurare dei vincoli sui campi tramite
 [constraints](https://docs.djangoproject.com/en/3.2/ref/models/options/#django.db.models.Options.constraints
 ).
 
+## Viste per gestire gli errori
+
+Django offre per default delle viste che gestiscono i maggiori casi di errore ossia 403, 404 e 500.
+Le viste per gli errori 403 e 404 possono essere richiamate rispettivamente tramite le eccezioni
+`PermissionDenied` e `Http404`, mentre la vista per gli errori 500 viene richiamata automaticamente
+in caso di errori a runtime non gestiti. Si rimanda alla documentazione delle
+[viste di errore](https://docs.djangoproject.com/en/3.2/ref/views/#error-views) e alla loro
+[customizzazione](https://docs.djangoproject.com/en/3.2/topics/http/views/#customizing-error-views).
+
 ## Paginazione
 
 Django comprende un [sistema di paginazione](https://docs.djangoproject.com/en/3.2/topics/pagination/)
