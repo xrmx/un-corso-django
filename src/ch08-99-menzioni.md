@@ -72,3 +72,12 @@ Possiamo inoltre scrivere per interagire con i nostri modelli tramite l'interfac
 
 Dei casi d'uso per le azioni potrebbe essere aggiornare qualche flag od effetture qualche ricalcolo
 su dei modelli specifici usando le feature dell'admin come i filtri e la ricerca per aiutarci.
+
+## Tool utili allo sviluppo
+
+Un paio di applicazioni utili in modalità sviluppo che richiedono la configurazione `DEBUG`, e quindi non
+devono essere abilitati su istanze di produzione, sono
+[Django Debug Toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) e
+[Django Silk](https://github.com/jazzband/django-silk). *Django Debug Toolbar* offre informazioni contestuali
+nella visualizzazione di una pagina, mentre *Django Silk* salva tutte le richieste fatte e permette di
+ispezionarle in un secondo momento.
