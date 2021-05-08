@@ -249,9 +249,18 @@ Corso.objects.filter(categoria=categoria).count()
 Corso.objects.filter(categoria=categoria).exists()
 ```
 
+È possibile visualizzare una rappresentazione, non sempre precisa, della query che ha popolato un
+QuerySet stampandone l'attributo `query`:
+
+```python
+qs = Corso.objects.all()
+print(qs.query)
+SELECT "corsi_corso"."id", "corsi_corso"."titolo", "corsi_corso"."descrizione", "corsi_corso"."categoria_id", "corsi_corso"."brochure", "corsi_corso"."creato", "corsi_corso"."aggiornato" FROM "corsi_corso"
+```
+
 ## Aggiornare istanze modelli
 
-Per aggiornare di un QuerySet si usa il metodo `update()`:
+Per aggiornare un QuerySet si usa il metodo `update()`:
 
 ```python
 Corso.objects.filter(titolo="Sviluppo software").update(categoria=categoria)
