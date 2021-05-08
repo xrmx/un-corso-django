@@ -51,11 +51,10 @@ in caso di errori a runtime non gestiti. Si rimanda alla documentazione delle
 Django comprende un [sistema di paginazione](https://docs.djangoproject.com/en/3.2/topics/pagination/)
 già integrato nelle viste a classi.
 
-## Upload di un file
+## Storage dei file in cloud
 
-L'upload di file tramite form su Django è ben documentato in un
-[articolo apposito](https://docs.djangoproject.com/en/3.2/topics/http/file-uploads/). Esistono
-applicazioni di terze parti per usare sistemi di storage diversi come ad esempio
+Esistono applicazioni di terze parti per usare sistemi di storage diversi dal filesystem locale per
+salvare i file caricati dagli utenti come ad esempio
 [django-storages](https://django-storages.readthedocs.io/en/latest/) che permette di salvare i file
 su sistemi di *object-storage* di diversi provider.
 
