@@ -49,7 +49,7 @@ pip install Django wheel
 ```
 
 Con questo comando abbiamo installato l'ultima versione disponibile di Django, al momento della
-scrittura 3.2. Abbiamo anche installato *wheel*, una pacchetto Python che aggiunge il supporto
+scrittura 3.2.2. Abbiamo anche installato *wheel*, una pacchetto Python che aggiunge il supporto
 all'installazione di pacchetti con binari pre-compilati.
 
 > Django rilascia una nuova versione ogni 8 mesi, ogni versione viene mantenuta per circa un anno.
