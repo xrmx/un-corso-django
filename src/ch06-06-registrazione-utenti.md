@@ -27,7 +27,7 @@ Che stamperà un output simile a questo:
 ```shell
 asgiref==3.3.4
 confusable-homoglyphs==3.2.0
-Django==3.2
+Django==3.2.2
 django-registration==3.1.2
 mysqlclient==2.0.3
 pytz==2021.1
