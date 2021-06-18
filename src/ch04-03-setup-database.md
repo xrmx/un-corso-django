@@ -26,11 +26,11 @@ pip install pyscopg2-binary
 ```
 
 Se si vuole usare il server tramite Docker, una volta scaricata la configurazione Docker Compose
-[postgres.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/postgres.yml), può essere
+[postgresql.yml](https://github.com/xrmx/un-corso-django/blob/main/docker/postgresql.yml), può essere
 eseguita tramite il comando:
 
 ```shell
-docker-compose -f postgres.yml up
+docker-compose -f postgresql.yml up
 ```
 
 > Il server salverà i dati in una directory relativa al percorso del file yaml
